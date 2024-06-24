@@ -1,0 +1,130 @@
+:root {
+  --color1: #000;
+  --color2: #fff;
+  --color3: #222;
+  --color4: #d6d6d650;
+  --color5: #c6c6c6;
+}
+
+body {
+  color: var(--color2);
+  background-color: var(--color3);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.content {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: var(--color1);
+  padding: 10px 10%;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 20px 0;
+  display: inline;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  transition: 1s ease-in;
+}
+
+.card {
+  text-align: left;
+  background-color: var(--color2);
+  color: var(--color3);
+  border-radius: 10px;
+  /* height: 260px; */
+  width: max(18%, 185px);
+  padding: 15px;
+  box-shadow: 0px 2px 8px #fff;
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.grid {
+  margin: 40px 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+
+.feat-box {
+  background-image: linear-gradient(90deg, black, grey, white, grey, black);
+  max-width: 100%;
+  height: 120px;
+}
+
+.form {
+  max-width: min(50%, 400px);
+  margin: 20px auto;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 3px;
+}
+
+#msg {
+  height: 150px;
+  padding-bottom: 120px;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  gap: 10%;
+}
+
+.experts .expertCard {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  text-align: left;
+}
+
+.headshot {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 0 8px #fff;
+}
+
+li,
+li a {
+  margin-left: 0;
+  margin-bottom: 15px;
+}

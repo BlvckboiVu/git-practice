@@ -1,0 +1,31 @@
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #fff;
+}
+
+a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+.card:hover {
+    translate: 0 15px;
+    scale: 1.05;
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    text-align: left;
+}
+/* 
+@media screen and (max-width: ) {
+    
+} */

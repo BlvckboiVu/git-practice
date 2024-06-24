@@ -1,0 +1,48 @@
+:root {
+    --bg1: #fcaaaa;
+    --bg2: #885072;
+    --bg3: #a32a3c;
+    --bg4: #119611;
+    --bg5: #e2e60c;
+    --primary: #000000;
+    --heading: #fff9aa;
+}
+
+body {
+    background-color: var(--bg1);
+    color: var(--primary);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#pot {
+    background-color: var(--bg1);
+    max-width: 70%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+h1 {
+    margin: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--heading);
+}
+
+#cook {
+    max-width: fit-content;
+    visibility: visible;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+ul {
+    list-style: square;
+}
+
+button {
+    max-width: fit-content;
+    background-color: #dd7d0f;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+}

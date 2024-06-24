@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box
+}
+form {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 6px rgba(0, 128, 0, 0.5);
+    border-radius: 3px;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+label {
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#close {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.orderType {
+    display: flex;
+    justify-content: space-between;
+    max-width: min(70%, 200px);
+    margin: 20px auto;
+}
+
+.inactive {
+    background-color: #ffffff;
+    color: green;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.formData {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin: 3px 0 0 0;
+    border-radius: 3px;
+}
+
+.note {
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px 80px 10px;
+    display: inline-block;
+    border: solid 1px rgb(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin: 3px 0 25px 0;
+    border-radius: 3px;
+}
+
+.order {
+    padding: 10px 40% 10px 40%;
+}
+
+@media screen and (max-width: 605px) {
+    form {
+        max-width: max(75%, 300px);
+        padding: 20px;
+    }
+    .container {
+        display: block;
+        margin: 0;
+    }
+    hr {
+        margin: 0;
+    }
+    .orderType {
+        background-color: rgba(0, 128, 0, 0.2);
+        border-radius: 50px;
+        margin: 15px auto;
+    }
+    .inactive {
+        background-color: rgba(0, 128, 0, 0);
+    }
+    button {
+        padding: 8px 16px;
+    }
+    .formData {
+        margin-bottom: 10px;
+    }
+    .note {
+        margin-bottom: 15px;
+    }
+    .order {
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+}
