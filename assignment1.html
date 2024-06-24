@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1</title>
-    <link rel="stylesheet" href="ass1.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/ass1.css" />
+  </head>
+  <body>
     <div id="pot">
-        <h1>Dejola's Assignment</h1>
-        <img id="cook" src="images/img_5.jpg" alt="Family preparing breakfast">
-        <p>A mother teaching her son to cook</p>
-        <button id="magicButton">Magic Button</button>
-        <!-- onclick="changebg()" ondblclick="hideImg()" -->
-        <ul>
-            <li>Blender</li>
-            <li>Glass Bowl</li>
-            <li>Mangoes</li>
-        </ul>
+      <h1>Dejola's Assignment</h1>
+      <img id="cook" src="images/img_5.jpg" alt="Family preparing breakfast" />
+      <p>A mother teaching her son to cook</p>
+      <button id="magicButton">Magic Button</button>
+      <!-- onclick="changebg()" ondblclick="hideImg()" -->
+      <ul>
+        <li>Blender</li>
+        <li>Glass Bowl</li>
+        <li>Mangoes</li>
+      </ul>
     </div>
     <script>
-        //declare reference to DOM elements
-    const pot = document.getElementById("pot")
-    const magicButton = document.getElementById("magicButton");
-        //declare array and initialize
-    const colors = ["--bg1", "--bg2", "--bg3", "--bg4", "--bg5"];
-    let currentColor = 0;
-        //create function to change background color
-    magicButton.addEventListener('click', () => {
+      //declare reference to DOM elements
+      const pot = document.getElementById("pot");
+      const magicButton = document.getElementById("magicButton");
+      //declare array and initialize
+      const colors = ["--bg1", "--bg2", "--bg3", "--bg4", "--bg5"];
+      let currentColor = 0;
+      //create function to change background color
+      magicButton.addEventListener("click", () => {
         const nextColor = colors[currentColor];
         pot.style.backgroundColor = `var(${nextColor})`;
         currentColor = (currentColor + 1) % colors.length;
-    });
-        //declare reference to img
-    const cook = document.getElementById("cook") 
-        //create function to hide image 
-    magicButton.addEventListener('dblclick', function() {
-        if (cook.style.visibility === "" || cook.style.visibility === "visible") {
-            cook.style.visibility = "hidden";
+      });
+      //declare reference to img
+      const cook = document.getElementById("cook");
+      //create function to hide image
+      magicButton.addEventListener("dblclick", function () {
+        if (
+          cook.style.visibility === "" ||
+          cook.style.visibility === "visible"
+        ) {
+          cook.style.visibility = "hidden";
+        } else {
+          cook.style.visibility = "visible";
         }
-        else {
-            cook.style.visibility = "visible";
-        }
-    })
+      });
     </script>
-
-</body>
+  </body>
 </html>

@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="css/form.css" />
     <script src="test.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <form id="signupForm" action="">
-            <h1>Sign Up</h1>
-            <p>Register to create an account</p>
-            <hr>
-            <div class="rect">
-                <label class="slip" for="fname"><b>Full Name</b></label>
-                <input type="text" name="fname" id="fname" placeholder="Full Name" required>
-                <label for="fnameError" id="fnameError" class="error-message"></label>
-           
-                <label class="slip" for="uname"><b>Username</b></label>
-                <input type="text" name="uname" id="uname" placeholder="Username" required>
-            
-                <label class="slip" for="mail"><b>Email Address</b></label>
-                <input type="email" name="mail" id="mail" placeholder="Enter Email" required>
-            
-                <label class="slip" for="pwd"><b>Password</b></label>
-                <input type="password" name="pwd" id="pwd" placeholder="Create Password" required>
-                <label for="pwdError" id="pwdError" class="error-message"></label>
+      <form id="signupForm" action="">
+        <h1>Sign Up</h1>
+        <p>Register to create an account</p>
+        <hr />
+        <div class="rect">
+          <label class="slip" for="fname"><b>Full Name</b></label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Full Name"
+            required
+          />
+          <label for="fnameError" id="fnameError" class="error-message"></label>
 
-                <label class="slip" for="pwd-rpt"><b>Re-Enter Password</b></label>
-                <input type="password" name="pwd-rpt" id="pwd-rpt" placeholder="Re-enter Password" required>
-                <label for="pwd-rptError" id="pwd-rptError" class="error-message"></label>
-                <div class="gndr">
-                    <p style="display: inline-block;"><b>Gender:</b></p>
-                    <input type="radio" name="gender" id="male" value="Male">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female" value="Female">
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="other" value="Other" >
-                    <label for="other">Other</label>
-                </div>
-            </div>
-            <div class="term">
-                <input type="checkbox" name="tc" id="tc" required>
-                <label for="tc">I agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></label>
-                <label for="tcError" id="tcError" class="error-message"></label>
-            </div>
-            
-            <button id="submit">Submit</button>
-            <button id="cancel">Cancel</button>
-        </form>
+          <label class="slip" for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="Username"
+            required
+          />
+
+          <label class="slip" for="mail"><b>Email Address</b></label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Enter Email"
+            required
+          />
+
+          <label class="slip" for="pwd"><b>Password</b></label>
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            placeholder="Create Password"
+            required
+          />
+          <label for="pwdError" id="pwdError" class="error-message"></label>
+
+          <label class="slip" for="pwd-rpt"><b>Re-Enter Password</b></label>
+          <input
+            type="password"
+            name="pwd-rpt"
+            id="pwd-rpt"
+            placeholder="Re-enter Password"
+            required
+          />
+          <label
+            for="pwd-rptError"
+            id="pwd-rptError"
+            class="error-message"
+          ></label>
+          <div class="gndr">
+            <p style="display: inline-block"><b>Gender:</b></p>
+            <input type="radio" name="gender" id="male" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="term">
+          <input type="checkbox" name="tc" id="tc" required />
+          <label for="tc"
+            >I agree to the <a href="">Terms of Use</a> and
+            <a href="">Privacy Policy</a></label
+          >
+          <label for="tcError" id="tcError" class="error-message"></label>
+        </div>
+
+        <button id="submit">Submit</button>
+        <button id="cancel">Cancel</button>
+      </form>
     </main>
-</body>
+  </body>
 </html>
